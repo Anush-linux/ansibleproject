@@ -1,0 +1,7 @@
+add a line in ansible client through ansible server
+---
+ - name: Ansible line in file
+   hosts: all
+   tasks:
+    - file: dest=/tmp/file1 state=touch
+    - lineinfile: dest=/tmp/file1 line='hai anush how are you'
