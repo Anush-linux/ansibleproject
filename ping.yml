@@ -1,0 +1,7 @@
+to check the ansible client ping status
+---
+ - name: ping Ansible clients
+   hosts: all
+   tasks:
+   - name: ping hosts
+     ping:
