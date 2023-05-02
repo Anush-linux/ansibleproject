@@ -1,0 +1,7 @@
+create directory in ansible client through ansible server
+---
+ - name: directort create ansible
+   hosts: all
+   tasks:
+   - name: create directory
+     file: dest=/tmp/dir1 state=directory
