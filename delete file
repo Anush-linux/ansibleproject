@@ -1,0 +1,7 @@
+delete file from ansible client through ansible server
+---
+ - name: create file Ansible
+   hosts: all
+   tasks:
+   - name: ansible file
+     file: dest=/tmp/file1 state=absent
