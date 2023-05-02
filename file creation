@@ -1,0 +1,8 @@
+creation file in client through ansible server 
+---
+ - name: create file Ansible
+   hosts: all
+   tasks:
+   - name: ansible file
+     file: dest=/tmp/file1 state=touch
+eation file in client through ansible server
